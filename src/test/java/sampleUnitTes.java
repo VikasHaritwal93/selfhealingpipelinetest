@@ -13,6 +13,6 @@ public class sampleUnitTes {
     @Test
     public void t6()
     {
-        Assertions.assertTrue("RAM"!="RAaM");
+        Assertions.assertTrue("RAM"=="RaaaAM");
     }
 }
