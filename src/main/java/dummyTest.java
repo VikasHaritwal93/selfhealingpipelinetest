@@ -1,3 +1,5 @@
+import org.junit.jupiter.api.Test;
+
 public class dummyTest {
 
     public static void main(String[] args) {
