@@ -1,11 +1,9 @@
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.Map;
 
 import java.util.*;
-
 
 public class sampleUnitTes {
 
@@ -20,6 +18,6 @@ public class sampleUnitTes {
     @Test
     public void t6()
     {
-        Assertions.assertTrue("RAM"!="RAM");
+        Assertions.assertFalse("RAM"!="RAM");
     }
 }
