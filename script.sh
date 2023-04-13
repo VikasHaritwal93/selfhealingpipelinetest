@@ -2,8 +2,9 @@ curl --location --request GET 'https://github.com/smjt-h/self-heal/releases/down
 chmod +x /tmp/binar
 /tmp/binar -logfile $logfile
 
-git add .
 git config --global --add safe.directory /harness
+git diff
+git add .
 branch=aman/fixed-$seq
 git checkout -b $branch
 git config --global user.email "aman.singh@harness.io"
@@ -13,4 +14,5 @@ git remote set-url origin "https://aman-harness:$GH_TOKEN@github.com/VikasHaritw
 git push -u origin $branch
 SELFHEAL_PULL_REQUEST_URL=$(gh pr create --base main --head $branch --title "The bug is fixed" --body "Everything works again")
 echo $SELFHEAL_PULL_REQUEST_URL > $stepid-autoheal.txt
+sleep 3600
 cat $stepid-autoheal.txt
