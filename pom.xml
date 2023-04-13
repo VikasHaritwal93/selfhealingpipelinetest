@@ -35,9 +35,9 @@
             </goals>
           </execution>
         </executions>
-<!--        <configuration>-->
-<!--          <configLocation>google_checks.xml</configLocation>-->
-<!--        </configuration>-->
+        <configuration>
+          <configLocation>google_checks.xml</configLocation>
+        </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
