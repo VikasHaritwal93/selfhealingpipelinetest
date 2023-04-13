@@ -11,5 +11,5 @@ git commit -m "fixed something"
 git remote set-url origin "https://aman-harness:$GH_TOKEN@github.com/VikasHaritwal93/selfhealingpipelinetest.git"
 git push -u origin $branch
 SELFHEAL_PULL_REQUEST_URL=$(gh pr create --base main --head $branch --title "The bug is fixed" --body "Everything works again")
-echo $SELFHEAL_PULL_REQUEST_URL > <+execution.steps.Run_1.identifier>-autoheal.txt
+echo $SELFHEAL_PULL_REQUEST_URL > $stepid-autoheal.txt
 cat <+execution.steps.Run_1.identifier>-autoheal.txt
