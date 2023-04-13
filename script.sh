@@ -3,6 +3,7 @@ chmod +x /tmp/binar
 /tmp/binar -logfile $logfile
 
 git add .
+git config --global --add safe.directory /harness
 branch=aman/fixed-$seq
 git checkout -b $branch
 git config --global user.email "aman.singh@harness.io"
