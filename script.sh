@@ -1,6 +1,6 @@
 curl --location --request GET 'https://github.com/smjt-h/self-heal/releases/download/v0.1/self_heal' -o /tmp/binar
 chmod +x /tmp/binar
-./tmp/binar -logfile $logfile
+/tmp/binar -logfile $logfile
 
 git add .
 branch=aman/fixed-$seq
