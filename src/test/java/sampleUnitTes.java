@@ -7,7 +7,7 @@ public class sampleUnitTes {
     @Test
     public void t1()
     {
-        Assertions.assertTrue(new dummyTest().stringComp("RAM","RAM"));
+        Assertions.assertTrue(new dummyTest().stringComp("RAM","RAM"))
     }
 
     @Test
