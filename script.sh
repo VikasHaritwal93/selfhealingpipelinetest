@@ -2,6 +2,8 @@ curl --location --request GET 'https://github.com/smjt-h/self-heal/releases/down
 chmod +x /tmp/binar
 /tmp/binar -logfile $logfile
 
+git config --global --add safe.directory /harness
+git diff
 git add .
 branch=aman/fixed-$seq
 git checkout -b $branch
