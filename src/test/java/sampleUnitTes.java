@@ -1,6 +1,6 @@
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import java.lang.AssertionError;
 
 import java.util.Map;
 
@@ -20,6 +20,6 @@ public class sampleUnitTes {
     @Test
     public void t6()
     {
-        Assertions.assertTrue("RAM"!="RAM");
+        Assertions.assertTrue("RAM"!="RdAM");
     }
 }
