@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_selfhealingpipelinetest_1699517574064-push-trigger-input-set
+  identifier: Build_selfhealingpipelinetest_1699517574064pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_selfhealingpipelinetest_1699517574064
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
