@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_selfhealingpipelinetest_1699517574064-pr-trigger-input-set
+  identifier: Build_selfhealingpipelinetest_1699517574064prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_selfhealingpipelinetest_1699517574064
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
